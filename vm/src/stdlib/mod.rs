@@ -77,7 +77,7 @@ pub fn get_module_inits() -> HashMap<String, StdlibInitFunc> {
         "errno".to_owned() => Box::new(errno::make_module),
         "hashlib".to_owned() => Box::new(hashlib::make_module),
         "itertools".to_owned() => Box::new(itertools::make_module),
-        "_io".to_owned() => Box::new(io::make_module),
+        "_rust_io".to_owned() => Box::new(io::make_module),
         "json".to_owned() => Box::new(json::make_module),
         "marshal".to_owned() => Box::new(marshal::make_module),
         "math".to_owned() => Box::new(math::make_module),
