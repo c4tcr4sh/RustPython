@@ -1410,7 +1410,9 @@ class Logger(Filterer):
         logger.error("Houston, we have a %s", "major problem", exc_info=1)
         """
         if self.isEnabledFor(ERROR):
+            print("hmm")
             self._log(ERROR, msg, args, **kwargs)
+            print("haaaa")
 
     def exception(self, msg, *args, exc_info=True, **kwargs):
         """
